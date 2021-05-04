@@ -1,24 +1,24 @@
+import { Link, routes } from '@redwoodjs/router'
+
 const HomePage = () => {
   return (
     <>
-      <h1>Blog application</h1>
+      <header>
+        <h1>ajcwebdev</h1>
 
-      <p>This is a RedwoodJS - a React framework - based application</p>
+        <nav>
+          <ul>
+            <li>
+              <Link to={routes.about()}>About</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>This page is the home!</main>
 
       <footer>
-        <h3>Try it out</h3>
-
-        <ul>
-          <li>
-            <a href="https://blog.com">Blog</a>
-          </li>
-          <li>
-            <a href="https://twitter.com">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com">GitHub</a>
-          </li>
-        </ul>
+        ...
       </footer>
     </>
   )
