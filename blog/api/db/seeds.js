@@ -7,3 +7,9 @@ const db = new PrismaClient()
 async function main() {
   console.info('No data to seed. See api/db/seeds.js for info.')
 }
+
+main()
+  .catch((e) => console.error(e))
+  .finally(async () => {
+    await db.$disconnect()
+  })
