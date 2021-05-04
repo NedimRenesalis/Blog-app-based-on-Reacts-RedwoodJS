@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <>
       <header>
-        <h1>ajcwebdev</h1>
+        <h1>Blog application</h1>
 
         <nav>
           <ul>
